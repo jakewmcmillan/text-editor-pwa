@@ -28,14 +28,14 @@ module.exports = () => {
         description: 'Just Another Text Editor',
         icons: [
           {
-            src: path.resolve('src/assets/icon.png'),
+            src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
           },
         ],
       }),
       new InjectManifest({
-        swSrc: './service-worker.js',
-        swDest: 'service-worker.js'
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js'
       })
     ],
 
